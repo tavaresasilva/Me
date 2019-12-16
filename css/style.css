@@ -1,0 +1,16 @@
+/** COLORS */
+
+.primary-color {
+    background-color: #54b78a;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.about-me {
+    list-style: none;
+}
