@@ -19,26 +19,49 @@
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 10px;
-    ;
+}
+
+.social li {
+    display: inline;
+    margin-right: 20px;
+    text-shadow: #292b2c 2px 5px;
 }
 
 #featured {
     width: 25%;
     height: 100vh;
-}
-
-#featured .row {
-    height: 100%;
+    position: fixed;
+    overflow-y: auto;
 }
 
 #resume {
     width: 75%;
+    position: relative;
+}
+
+
+/** scroll bar*/
+
+#featured::-webkit-scrollbar {
+    width: 4px;
+}
+
+#featured::-webkit-scrollbar-track {
+    background: #686868;
+    border-radius: 10px;
+}
+
+#featured::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 991px) {
     #featured {
         width: 100%;
         height: auto;
+        position: relative;
     }
     #resume {
         width: 100%;
