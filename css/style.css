@@ -1,7 +1,7 @@
 /** COLORS */
 
-.primary-color {
-    background-color: #54b78a;
+.primary-gradient-color {
+    background: linear-gradient(#54b78a, #27e278);
 }
 
 .center {
@@ -13,4 +13,34 @@
 
 .about-me {
     list-style: none;
+}
+
+.about-me li {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+    ;
+}
+
+#featured {
+    width: 25%;
+    height: 100vh;
+}
+
+#featured .row {
+    height: 100%;
+}
+
+#resume {
+    width: 75%;
+}
+
+@media screen and (max-width: 991px) {
+    #featured {
+        width: 100%;
+        height: auto;
+    }
+    #resume {
+        width: 100%;
+    }
 }
