@@ -1,7 +1,7 @@
 /** COLORS */
 
-.primary-gradient-color {
-    background: linear-gradient(#54b78a, #27e278);
+.me-grad-green {
+    background: linear-gradient(45deg, #27e278, #54b78a);
 }
 
 .center {
@@ -21,6 +21,16 @@
     margin-top: 10px;
 }
 
+
+/** SOCIAL */
+
+.social {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    bottom: 10;
+}
+
 .social li {
     display: inline;
     margin-right: 20px;
@@ -29,9 +39,7 @@
 
 #featured {
     width: 25%;
-    height: 100vh;
     position: fixed;
-    overflow-y: auto;
 }
 
 #resume {
@@ -40,30 +48,43 @@
 }
 
 
-/** scroll bar*/
+/** GLOBAL POSITION */
 
-#featured::-webkit-scrollbar {
-    width: 4px;
+.y-100-xs {
+    height: 100vw;
 }
 
-#featured::-webkit-scrollbar-track {
-    background: #686868;
-    border-radius: 10px;
+
+/** EXTERNAL REFS */
+
+.external::after {
+    font-family: 'Font Awesome 5 Free' !important;
+    content: "\f062";
+    display: inline-block;
+    transform: rotate(45deg) !important;
+    margin-left: 5px;
+    font-weight: 900;
 }
 
-#featured::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
+/** SAME PARENTS ATTRIBUTES */
+
+.parent-color:link {
+    color: inherit;
 }
+
+
+/** MEDIA SCREENS */
 
 @media screen and (max-width: 991px) {
     #featured {
         width: 100%;
-        height: auto;
         position: relative;
     }
     #resume {
         width: 100%;
+    }
+    .y-100-xs {
+        height: auto;
     }
 }
