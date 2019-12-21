@@ -65,6 +65,8 @@
 #featured {
     width: 20%;
     position: fixed;
+    box-shadow: 1px 1px 5px rgb(133, 128, 128);
+    z-index: 9999;
 }
 
 .social {
