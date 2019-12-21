@@ -60,7 +60,12 @@
 /** /COLORS */
 
 
-/** SOCIAL */
+/** FEATURED */
+
+#featured {
+    width: 20%;
+    position: fixed;
+}
 
 .social {
     margin: 0;
@@ -91,15 +96,19 @@
     margin-bottom: 5px;
 }
 
-#featured {
-    width: 20%;
-    position: fixed;
-}
 
-#resume {
+/** /FEATURED */
+
+
+/** ABOUT-CONTAINER*/
+
+#about-container {
     width: 80%;
     position: relative;
 }
+
+
+/** /ABOUT-CONTAINER */
 
 
 /** MEDIA SCREENS */
@@ -109,8 +118,13 @@
         width: 100%;
         position: relative;
     }
-    #resume {
+    #about-container {
         width: 100%;
+        position: relative;
+    }
+    #about-container .container {
+        width: 100vw !important;
+        margin: 0;
     }
     .y-100-xs {
         height: auto;
