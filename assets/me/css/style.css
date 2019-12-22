@@ -56,6 +56,10 @@
     background: linear-gradient(45deg, #27e278, #54b78a);
 }
 
+.bg-green-btn {
+    background: #27e278;
+}
+
 
 /** /COLORS */
 
@@ -76,13 +80,10 @@
 }
 
 .social li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.social li {
     transition: 0.2s;
     transform: scale(1);
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .social li:hover {
@@ -111,6 +112,30 @@
 
 
 /** /ABOUT-CONTAINER */
+
+
+/** CONTACT */
+
+#contact-form input,
+#contact-form textarea {
+    border: none;
+    border-bottom: 2px solid #dddddd;
+    border-radius: 0;
+    color: #dddddd;
+    font-weight: 500;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border: none;
+    border-bottom: 2px solid #27e278;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/** /CONTACT */
 
 
 /** MEDIA SCREENS */
