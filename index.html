@@ -56,7 +56,7 @@
     </section>
 
     <section id="about-container" class="float-right">
-        <div id="about" class="container-fluid bg-light">
+        <div id="about" class="container-fluid">
             <div class="row">
                 <div class="col pt-5">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis lorem vel mi dignissim lobortis. Mauris in scelerisque arcu. Donec in nisi ac ante commodo iaculis non et lorem. Sed quis laoreet mauris. Cras sit amet dolor
@@ -108,31 +108,49 @@
             </div>
         </div>
 
-        <div id="contact" class="container-fluid bg-primary">
-            <div class="row">
-                <div class="col-md-12 pt-5">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis lorem vel mi dignissim lobortis. Mauris in scelerisque arcu. Donec in nisi ac ante commodo iaculis non et lorem. Sed quis laoreet mauris. Cras sit amet dolor
-                        ante. Nullam vestibulum mollis dui, et varius eros malesuada et. Vestibulum tortor risus, rhoncus vel rhoncus sit amet, iaculis sit amet mi.</p>
-                    <p>Nunc iaculis tristique dui, quis ornare velit gravida id. Ut volutpat, magna sed lacinia ultrices, erat erat suscipit ex, sed pretium ligula mauris ut augue. In id luctus velit. Integer sodales dapibus nulla, blandit facilisis nisi
-                        pellentesque sed. Phasellus ipsum libero, vulputate ac dignissim nec, congue sit amet mi. Cras finibus neque non nulla facilisis consectetur. Aliquam efficitur odio justo, vitae consectetur arcu scelerisque vel. Nulla fringilla,
-                        odio vitae dignissim scelerisque, ligula augue auctor odio, luctus fringilla urna arcu et nisi. Nunc accumsan sem ut lacus molestie, sed volutpat turpis pharetra. Nullam pharetra turpis eu nisi lobortis ornare. Morbi consequat
-                        arcu elementum massa facilisis venenatis. Sed placerat porttitor pharetra. Donec non purus in nisl faucibus fringilla vitae sit amet tellus. Donec gravida dignissim enim, gravida rutrum lacus blandit vel.</p>
-                    <p>Nullam ornare ut elit ut laoreet. Sed euismod ultricies erat eu maximus. Ut consequat magna metus, at eleifend lectus mattis blandit. Aenean a pulvinar orci, id aliquet massa. Sed dapibus lorem vitae fermentum vehicula. Cras a purus
-                        ut nibh semper mattis eu fringilla tellus. Morbi aliquam elit nec leo varius, eu vehicula augue facilisis. Cras sem turpis, mattis suscipit tortor facilisis, posuere finibus nulla. Curabitur ligula nibh, pretium vel dapibus quis,
-                        aliquet finibus metus. Aliquam erat volutpat. Proin ut lacus eu urna ultrices imperdiet. Nulla fringilla, metus vel eleifend hendrerit, eros metus fermentum ex, ac consectetur nisi sem nec elit. Cras massa dolor, pellentesque sit
-                        amet faucibus vitae, ultrices vitae ex. Cras posuere sagittis augue, vitae dignissim diam tristique eu. Ut vel magna non sem gravida sagittis. Aenean sodales nec orci dictum venenatis.</p>
-                    <p>Proin sit amet euismod mauris. Nulla facilisi. Phasellus orci felis, facilisis sit amet auctor eget, feugiat vel nisl. Praesent convallis odio eget odio vehicula, sit amet faucibus elit facilisis. Mauris scelerisque porttitor odio,
-                        eget tempor nunc venenatis et. Nunc id enim non lorem cursus sollicitudin. Sed pellentesque magna sed arcu posuere condimentum. Quisque dapibus nunc eget sem tristique condimentum. Aenean ac urna vestibulum augue accumsan condimentum.
-                        Cras consectetur scelerisque tortor lobortis placerat. Nunc in tristique neque, eget auctor sapien. Mauris blandit augue nulla. Vestibulum iaculis orci nulla.</p>
-                    <p>Quisque ullamcorper eget justo at tincidunt. Sed semper vel elit posuere euismod. Nulla ac libero at sem egestas mollis sit amet tincidunt ipsum. Duis et nibh vel metus finibus dictum et vel lacus. Vivamus ex nisi, facilisis vel nunc
-                        sit amet, suscipit dignissim mi. Ut non rhoncus est. Nullam quis orci urna. Etiam quis iaculis ex, vitae tristique leo. Suspendisse mattis tortor eu ornare tempor. Integer non suscipit sem.</p>
-                    <p>Proin sit amet euismod mauris. Nulla facilisi. Phasellus orci felis, facilisis sit amet auctor eget, feugiat vel nisl. Praesent convallis odio eget odio vehicula, sit amet faucibus elit facilisis. Mauris scelerisque porttitor odio,
-                        eget tempor nunc venenatis et. Nunc id enim non lorem cursus sollicitudin. Sed pellentesque magna sed arcu posuere condimentum. Quisque dapibus nunc eget sem tristique condimentum. Aenean ac urna vestibulum augue accumsan condimentum.
-                        Cras consectetur scelerisque tortor lobortis placerat. Nunc in tristique neque, eget auctor sapien. Mauris blandit augue nulla. Vestibulum iaculis orci nulla.</p>
+        <div id="contact" class="container-fluid mt-5">
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <h3>Contact</h3>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="field_form form_style3 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+                        <form method="post" name="enq">
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <input required="required" placeholder="Enter Name *" id="first-name" class="form-control" name="name" type="text">
+                                </div>
+                                <div class="form-group col-12">
+                                    <input required="required" placeholder="Enter Email *" id="email" class="form-control" name="email" type="email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <input placeholder="Enter Subject" id="subject" class="form-control" name="subject" type="text">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <textarea required="required" placeholder="Message *" id="description" class="form-control" name="message" rows="5"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" title="Submit Your Message!" class="btn btn-default rounded-0 btn-aylen" id="submitButton" name="submit" value="Submit">Submit</button>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="alert-msg" class="alert-msg text-center"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252837.34560951844!2d-35.07872381737751!3d-8.041800649227673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab196f88c446e5%3A0x3c9ef52922447fd4!2sRecife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1576977686115!5m2!1spt-BR!2sbr"
+                        width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
 
             </div>
         </div>
+
     </section>
 
 
